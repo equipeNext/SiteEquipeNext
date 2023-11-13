@@ -19,12 +19,13 @@ section {
 }
 
 h1 {
-    text-align: center;
-    color: #ffffff;
-    text-shadow: black 0.1em 0.1em 0.2em;
-    font-family: 'Poppins';
-    font-weight: bold;
-    padding-top: 20px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  padding-top: 20px;
+  margin: 50px auto;
 }
 /********/
 nav .navbar-brand {
@@ -38,11 +39,7 @@ nav .navbar-brand:hover {
 
 .navbar-brand{
     padding:  90px;
-}
-
-.navbar-brand {
-  padding: 40px;
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .navbar-nav {
