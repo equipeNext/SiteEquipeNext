@@ -460,10 +460,6 @@ footer {
         margin-left: 20px;
     }
 
-    footer {
-        position: relative;
-    }
-
     @media (max-width: 780px) {
         .card-client {
             width: 80%;
@@ -628,7 +624,6 @@ footer {
 
 @media (max-width: 1368px) {
     footer {
-        position: relative;
         margin-top: 2vw;
     }
 
