@@ -1,0 +1,439 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,500;1,600&display=swap');
+
+.navbar-brand {
+    padding: 90px;
+    cursor: pointer;
+}
+
+.navbar-nav {
+    padding: 10px 0px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+ 
+ }
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+html {
+    background-color: #BAD1C2;
+}
+
+main {
+    background-color: #BAD1C2;
+}
+
+.navbar-nav {
+    padding: 10px 0;
+}
+#ContatoH1{
+    text-align: center;
+    color: #ffffff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+
+nav,
+footer {
+    background-color: #6F2BF6;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#area-texto {
+    resize: none;
+}
+
+.Pick-up {
+    width: 100px;
+    height: 3em;
+    border-radius: 50px;
+    font-size: 15px;
+    padding: 10px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    background-color: #6F2BF6;
+}
+
+.Pick-up::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 10;
+    background-image: linear-gradient(to right, #6F2BF6 0%, black 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.Pick-up:hover::before {
+    width: 9em;
+}
+
+/****************************/
+.Mensagem {
+    width: 39%;
+    max-width: 60vw;
+    height: 52vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid #6F2BF6;
+    background: linear-gradient(to right, #6F2BF6, black);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 100px auto;
+    border-radius: 50px;
+    padding: 20px;
+    margin-left: 15em;
+
+}
+
+.Mensagem form .descr {
+    font-size: 20px;
+    font-weight: 500;
+    color: #e8e8e8;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input,
+textarea {
+    margin: 1em 0;
+    width: 100%;
+    position: relative;
+}
+
+.input input,
+textarea {
+    font-size: 100%;
+    padding: 0.7em;
+    outline: none;
+    color: #e8e8e8;
+    border: none;
+    border-bottom: 2px solid #e8e8e8;
+    background: transparent;
+    border-radius: none;
+    width: 100%;
+    resize: none;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+.input label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    color: #e8e8e8;
+    padding: 0.7em;
+    margin-left: 0.1em;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+}
+
+.input :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0;
+    padding: 0.4em;
+    background: transparent;
+}
+
+.input textarea:focus~label,
+.input textarea:valid~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0;
+    padding: 0.4em;
+    background: transparent;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+    border-color: #6F2BF6;
+}
+
+.form button {
+    color: #e8e8e8;
+    font-size: 15px;
+    align-self: flex-start;
+    padding: 0.6em;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 50px;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.form button:before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e8e8e8;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.form button:hover:before {
+    opacity: 0.2;
+}
+
+.form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/****************************/
+.footerContainer {
+    height: 70px;
+    padding: 5px;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 3px;
+    background-color: white;
+    margin: 3px;
+    border-radius: 40%;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin: 0 5px;
+}
+
+.img {
+    float: right;
+    position: absolute;
+    top: 20%;
+    right: 1%;
+}
+
+@media screen and (max-width: 1024px) {
+    .Mensagem {
+        margin-top: 50px;
+    }
+
+    .input,
+    textarea {
+        width: 100%;
+    }
+
+    .form button {
+        align-self: center;
+    }
+
+    .footerNav ul li a {
+        font-size: 12px;
+    }
+
+    .img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1368px) {
+    footer {
+        position: relative;
+    }
+
+    .Mensagem {
+        height: 75vh;
+        width: 40vw;
+        margin-left: 12vw;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .navbar-brand {
+        padding: 10px;
+    }
+
+    .Mensagem {
+        margin: 100px auto;
+        padding: 100px;
+    }
+
+    .input,
+    textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .footerNav ul li a {
+        font-size: 20px;
+    }
+
+    .img {
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .Mensagem {
+        width: 100%;
+        padding: 10%
+    }
+
+    .input,
+    textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .footerNav ul li a {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .Mensagem {
+        width: auto;
+        height: 65vh;
+        padding: 10%;
+        margin-bottom: 22px;
+    }
+
+    .input,
+    textarea {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .footerNav ul li a {
+        font-size: 100px;
+    }
+
+    #ContatoH1 {
+        margin-top: 50px;
+    }
+
+    footer {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .Mensagem {
+        width: auto;
+        height: 55vh;
+        padding: 10%;
+        margin-bottom: 22px;
+    }
+
+    .input,
+    textarea {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .footerNav ul li a {
+        font-size: 100px;
+    }
+
+    #ContatoH1 {
+        margin-top: 50px;
+    }
+
+    footer {
+        position: relative;
+    }
+}
