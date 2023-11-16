@@ -146,6 +146,7 @@ textarea {
     border-bottom: 2px solid #e8e8e8;
     background: transparent;
     border-radius: none;
+    width: 100%;
     resize: none;
 }
 input[type=number]::-webkit-inner-spin-button { 
@@ -312,7 +313,6 @@ input[type=number]::-webkit-inner-spin-button {
     .input,
     textarea {
         width: 100%;
-        padding: 30%;
     }
 
     .form button {
@@ -370,7 +370,7 @@ input[type=number]::-webkit-inner-spin-button {
 @media screen and (max-width: 680px) {
     .Mensagem {
         width: 100%;
-        padding: 40%
+        padding: 10%
     }
 
     .input,
@@ -388,7 +388,7 @@ input[type=number]::-webkit-inner-spin-button {
     .Mensagem {
         width: auto;
         height: 65vh;
-        padding: 40%;
+        padding: 10%;
         margin-bottom: 22px;
     }
 
@@ -415,7 +415,7 @@ input[type=number]::-webkit-inner-spin-button {
     .Mensagem {
         width: auto;
         height: 55vh;
-        padding: 40%;
+        padding: 10%;
         margin-bottom: 22px;
     }
 
